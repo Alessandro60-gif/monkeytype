@@ -18,17 +18,15 @@ body {
     margin: 0 auto;
     max-width: 1000px;
     padding: 30px;
-    
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .header { 
     display: flex;
     justify-content: space-between;
     cursor:pointer;
-    
 }
-
 
 .logo .subtitle {
     color: #646669;
@@ -49,32 +47,37 @@ body {
 
 }
 
-.midle {
+.middle {
     line-height: 35px;
     text-align: left;
-    margin-top:275px;
-    margin-bottom: 250px;
     font-size: 24px;
     color: #646669;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .botom .keytips .button {
-background-color: #646669;
-color:#323437;
-
+    background-color: #646669;
+    color:#323437;
+    padding: 1px 3px;
+    border-radius: 1.6px;
 }
 
 .botom {
     color: #646669;
     font-size: 13px;
-    
 }
 
 .keytips {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
-    
+}
 
+.keytips .row:last-of-type {
+    margin-top: 5px;
 }
 
 .left {
@@ -90,16 +93,16 @@ color:#323437;
 
 }
 
-    .config .row .config-word {
-        cursor: pointer;
-        color: #646669;
-        font-size: 12px;
-    }
+.config .row .config-name {
+    cursor: pointer;
+    color: #646669;
+    font-size: 12px;
+}
 
-    .config .row .config-word:hover {
-        color: #e2b714;
-    }
+.config .row .config-name:hover {
+    color: #e2b714;
+}
 
-    .config .row .config-word.selected {
-        color: #e2b714;
-    }
+.config .row .config-name.selected {
+    color: #e2b714;
+}
